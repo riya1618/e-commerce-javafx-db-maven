@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dnyanyog.add_product.AddProductController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="243.0" style="-fx-background-color: ffa533;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField layoutX="14.0" layoutY="77.0" prefHeight="24.0" prefWidth="238.0" style="-fx-background-color: transparent;" text="Welcome To E-Commerce">
+               <font>
+                  <Font name="Arial Bold Italic" size="16.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="47.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cart.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="357.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="109.0" layoutY="22.0" text="Add Product" textFill="#ffac38">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productPrice" layoutX="106.0" layoutY="193.0" promptText="PRODUCT PRICE" style="-fx-background-color: transparent; -fx-border-color: ffa533; -fx-border-width: 0px 0px 3px 0px;" />
+            <TextField fx:id="productQuantity" layoutX="106.0" layoutY="147.0" promptText="PRODUCT QUANTITY" style="-fx-background-color: transparent; -fx-border-color: ffa533; -fx-border-width: 0px 0px 3px 0px;" />
+            <TextField fx:id="productName" layoutX="106.0" layoutY="100.0" promptText="PRODUCT NAME" style="-fx-background-color: transparent; -fx-border-color: ffa533; -fx-border-width: 0px 0px 3px 0px;" />
+            <Button graphicTextGap="5.0" layoutX="181.0" layoutY="249.0" mnemonicParsing="false" onAction="#addProductSubmitClick" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: ffa533; -fx-border-width: 1px 1px 1px 1px;" text="submit" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="addProductMessage" layoutX="103.0" layoutY="331.0" prefHeight="17.0" prefWidth="141.0" textFill="#3ab11c" />
+            <Button graphicTextGap="5.0" layoutX="99.0" layoutY="249.0" mnemonicParsing="false" onAction="#backButtonClick" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: ffa533; -fx-border-width: 1px 1px 1px 1px;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
